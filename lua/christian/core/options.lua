@@ -1,5 +1,6 @@
 -- setup base on https://www.youtube.com/watch?v=vdn_pKJUda8
 local opt = vim.opt -- for conciseness
+local cmd = vim.cmd -- for ease
 
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
@@ -40,3 +41,6 @@ opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
 opt.iskeyword:append("-") -- consider string-string as whole word
+
+-- This will remove line numbers when opning a :terminal
+cmd [[ autocmd TermOpen * setlocal nonumber norelativenumber ]]
