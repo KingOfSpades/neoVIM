@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["glow.nvim"] = {
+    loaded = true,
+    path = "/Users/christian/.local/share/nvim/site/pack/packer/start/glow.nvim",
+    url = "https://github.com/ellisonleao/glow.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/christian/.local/share/nvim/site/pack/packer/start/lualine.nvim",
